@@ -1,50 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About - Hedglen</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Rob Hedglen</title>
   <style>
     body {
       background: #0b0b0b;
       color: #eaeaea;
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: 120px auto;
       padding: 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+      line-height: 1.1;
     }
 
     p {
-      line-height: 1.7;
-      opacity: 0.85;
-      margin-bottom: 20px;
-      max-width: 700px;
+      line-height: 1.75;
+      opacity: 0.88;
+      max-width: 720px;
+      margin-bottom: 22px;
     }
 
-    a {
+    .nav {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+
+    .nav a {
       color: #00ff9c;
       text-decoration: none;
+      margin-right: 24px;
+      font-weight: 500;
     }
 
-    a:hover {
-      opacity: 0.75;
+    .nav a:hover {
+      opacity: 0.72;
     }
 
-    .back {
-      margin-top: 40px;
-      display: inline-block;
+    @media (max-width: 700px) {
+      .container {
+        margin: 80px auto;
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="about.html">About</a>
+    </div>
+
     <h1>About</h1>
 
     <p>
@@ -52,15 +81,19 @@
     </p>
 
     <p>
-      My background includes military leadership and graduate study in business and creative writing.
-      That experience shapes how I think about structure, communication, and the tradeoffs underneath most real-world decisions.
+      My background includes military leadership, graduate study in business, and an MFA in Creative Writing.
+      That mix shapes how I think about structure, communication, responsibility, and the tradeoffs underneath most real-world decisions.
     </p>
 
     <p>
-      This site is a working space for projects, writing, and ideas that are still taking shape.
+      I’m drawn to work that is practical, clear, and grounded. That applies to writing, to systems, and to the tools people rely on every day.
+      I like clean solutions, durable frameworks, and ideas that hold up outside the room they were first discussed in.
     </p>
 
-    <a class="back" href="index.html">← Back home</a>
+    <p>
+      This site is a working space. It’s where I collect projects, writing, and pieces of thought that are still taking shape.
+      Some of it will stay rough for a while. That’s part of the point.
+    </p>
   </div>
 </body>
 </html>
