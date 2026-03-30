@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Rob Hedglen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Hedglen</title>
   <style>
     body {
       background: #0b0b0b;
@@ -13,26 +13,31 @@
     }
 
     .container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 120px auto;
       padding: 20px;
     }
 
     h1 {
-      font-size: 2.6rem;
-      margin-bottom: 16px;
-      line-height: 1.1;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      opacity: 0.6;
+      margin-bottom: 30px;
+      font-size: 1rem;
     }
 
     p {
-      line-height: 1.75;
-      opacity: 0.88;
-      max-width: 720px;
-      margin-bottom: 22px;
+      line-height: 1.7;
+      opacity: 0.85;
+      max-width: 700px;
+      margin-bottom: 20px;
     }
 
     .nav {
-      margin-top: 20px;
+      margin-top: 30px;
       margin-bottom: 60px;
     }
 
@@ -44,29 +49,47 @@
     }
 
     .nav a:hover {
-      opacity: 0.72;
+      opacity: 0.7;
     }
 
-    @media (max-width: 700px) {
-      .container {
-        margin: 80px auto;
-        padding: 24px;
-      }
+    .section-title {
+      font-size: 1.25rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
 
-      h1 {
-        font-size: 2.2rem;
-      }
+    .info-card {
+      background: #121212;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 22px;
+      margin-bottom: 18px;
+    }
 
-      .nav a {
-        display: inline-block;
-        margin-right: 16px;
-        margin-bottom: 10px;
-      }
+    .info-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .info-card p {
+      margin-top: 0;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
+
+    .note {
+      margin-top: 50px;
+      opacity: 0.55;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <h1>About</h1>
+    <div class="tagline">Background, interests, and the kind of work I keep returning to.</div>
+
     <div class="nav">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -74,26 +97,54 @@
       <a href="about.html">About</a>
     </div>
 
-    <h1>About</h1>
-
     <p>
-      I’m interested in systems, writing, and the way people make decisions under pressure.
+      I’m interested in systems, writing, and the way people make decisions when the stakes are real.
+      A lot of what I build or write circles those same questions from different angles.
     </p>
 
     <p>
-      My background includes military leadership, graduate study in business, and an MFA in Creative Writing.
-      That mix shapes how I think about structure, communication, responsibility, and the tradeoffs underneath most real-world decisions.
+      My background includes military leadership, graduate study in business, and ongoing work in creative writing.
+      That mix has shaped how I think about structure, pressure, communication, and the gap between theory and practice.
     </p>
 
     <p>
-      I’m drawn to work that is practical, clear, and grounded. That applies to writing, to systems, and to the tools people rely on every day.
-      I like clean solutions, durable frameworks, and ideas that hold up outside the room they were first discussed in.
+      This site is a place to gather projects, writing, and ideas that feel worth developing in public.
+      Some of it is polished. Some of it is still taking shape. That feels fine to me.
     </p>
 
+    <div class="section-title">What I’m Interested In</div>
+
+    <div class="info-card">
+      <h2>Systems</h2>
+      <p>
+        Workflows, tools, structure, and practical ways to make life and work cleaner, simpler, and more intentional.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h2>Writing</h2>
+      <p>
+        Long-form work, creative practice, revision, and the kind of writing that helps clarify what matters.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h2>Projects</h2>
+      <p>
+        Experiments, builds, and ongoing work that sit somewhere between usefulness, curiosity, and obsession.
+      </p>
+    </div>
+
+    <div class="section-title">Why This Site Exists</div>
+
     <p>
-      This site is a working space. It’s where I collect projects, writing, and pieces of thought that are still taking shape.
-      Some of it will stay rough for a while. That’s part of the point.
+      I wanted a space that was mine. Not a feed, not a profile, not something rented from a platform that can change shape whenever it wants.
+      Just a clean place to build things, write things down, and keep going.
     </p>
+
+    <div class="note">
+      Still building, which is probably the point.
+    </div>
   </div>
 </body>
 </html>
