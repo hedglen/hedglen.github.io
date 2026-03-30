@@ -1,47 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Writing - Hedglen</title>
   <style>
     body {
       background: #0b0b0b;
       color: #eaeaea;
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 120px auto;
       padding: 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      opacity: 0.6;
+      margin-bottom: 30px;
+      font-size: 1rem;
     }
 
     p {
       line-height: 1.7;
       opacity: 0.85;
+      max-width: 700px;
     }
 
-    a {
+    .nav {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    .nav a {
       color: #00ff9c;
       text-decoration: none;
+      margin-right: 24px;
+      font-weight: 500;
     }
 
-    .back {
-      margin-top: 40px;
-      display: inline-block;
+    .nav a:hover {
+      opacity: 0.7;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .writing-card {
+      background: #121212;
+      border: 1px solid #1f1f1f;
+      border-radius: 10px;
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+
+    .writing-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .writing-card p {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .writing-link {
+      color: #00ff9c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .writing-link:hover {
+      opacity: 0.7;
+    }
+
+    .note {
+      margin-top: 50px;
+      opacity: 0.55;
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Writing</h1>
-    <p>This page will hold essays, long-form writing, and selected MFA work.</p>
-    <a class="back" href="index.html">← Back home</a>
+    <div class="tagline">Essays, long-form work, notes, and selected pieces.</div>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <p>
+      This page is where I’m collecting writing that matters to me. Some of it comes
+      out of formal study. Some of it comes from curiosity, reflection, or trying to
+      understand something more clearly by putting it into words.
+    </p>
+
+    <div class="section-title">Current Writing Focus</div>
+
+    <div class="writing-card">
+      <h2>Creative Writing and MFA Work</h2>
+      <p>
+        Ongoing fiction, essays, and workshop-driven writing shaped by close reading,
+        revision, and a serious interest in character, structure, and pressure.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h2>Notes on Craft and Process</h2>
+      <p>
+        Reflections on writing practice, revision, research, and the way a piece changes
+        once you stop trying to force it into the wrong shape.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h2>Long-Form Essays and Ideas</h2>
+      <p>
+        A place for more sustained thinking. Pieces that need room to move, connect, and
+        work through a question instead of rushing toward a conclusion.
+      </p>
+    </div>
+
+    <div class="section-title">What This Will Become</div>
+
+    <p>
+      Over time, this page will hold selected essays, excerpts, project notes, and
+      pieces of writing that feel worth keeping in public.
+    </p>
+
+    <div class="note">
+      Still building. I’d rather let this grow honestly than fill it with noise too early.
+    </div>
   </div>
 </body>
 </html>
