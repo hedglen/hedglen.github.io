@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rob Hedglen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hedglen</title>
   <style>
     body {
       background: #0b0b0b;
@@ -20,31 +20,25 @@
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 5px;
-      line-height: 1.1;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .tagline {
-      opacity: 0.65;
+      opacity: 0.6;
       margin-bottom: 30px;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
 
     p {
       line-height: 1.7;
       opacity: 0.85;
-      max-width: 680px;
+      max-width: 700px;
       margin-bottom: 20px;
     }
 
     .nav {
-      margin-top: 40px;
-      margin-bottom: 70px;
+      margin-top: 30px;
+      margin-bottom: 60px;
     }
 
     .nav a {
@@ -55,40 +49,39 @@
     }
 
     .nav a:hover {
-      opacity: 0.72;
+      opacity: 0.7;
     }
 
-    .section {
-      margin-top: 60px;
+    .section-title {
+      font-size: 1.25rem;
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
 
-    .card {
+    .info-card {
       background: #121212;
-      border: 1px solid #1e1e1e;
+      border: 1px solid #1f1f1f;
       border-radius: 10px;
-      padding: 18px 20px;
-      max-width: 700px;
+      padding: 22px;
+      margin-bottom: 18px;
     }
 
-    .muted {
-      opacity: 0.65;
+    .info-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
     }
 
-    @media (max-width: 700px) {
-      .container {
-        margin: 80px auto;
-        padding: 24px;
-      }
+    .info-card p {
+      margin-top: 0;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
 
-      h1 {
-        font-size: 2.3rem;
-      }
-
-      .nav a {
-        display: inline-block;
-        margin-right: 16px;
-        margin-bottom: 10px;
-      }
+    .note {
+      margin-top: 50px;
+      opacity: 0.55;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -97,11 +90,6 @@
     <h1>Rob Hedglen</h1>
     <div class="tagline">Work. Systems. Writing.</div>
 
-    <p>
-      I’m building systems that make work and life cleaner, more intentional, and more effective.
-      This is my space for projects, writing, and ideas.
-    </p>
-
     <div class="nav">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
@@ -109,18 +97,48 @@
       <a href="about.html">About</a>
     </div>
 
-    <div class="section">
-      <h2>Current Focus</h2>
-      <div class="card">
-        Building a personal command center for systems, writing, workflows, and ongoing projects.
-      </div>
+    <p>
+      This is a home for projects, writing, and ideas that seem worth building out in public.
+      Some of it starts as a practical problem. Some of it starts as curiosity. Usually it turns into both.
+    </p>
+
+    <p>
+      I’m interested in systems that make life and work more intentional, writing that helps clarify what matters,
+      and projects that sit somewhere between usefulness and obsession.
+    </p>
+
+    <div class="section-title">What You’ll Find Here</div>
+
+    <div class="info-card">
+      <h2>Projects</h2>
+      <p>
+        Ongoing builds, experiments, tools, and practical systems that grow out of real use.
+      </p>
     </div>
 
-    <div class="section">
-      <h2>What This Site Is For</h2>
-      <p class="muted">
-        A home for projects in progress, longer-form writing, and the systems behind how I work.
+    <div class="info-card">
+      <h2>Writing</h2>
+      <p>
+        Essays, long-form work, notes on craft, and selected pieces from a broader creative practice.
       </p>
+    </div>
+
+    <div class="info-card">
+      <h2>About</h2>
+      <p>
+        Background, interests, and the ideas that keep showing up no matter what form the work takes.
+      </p>
+    </div>
+
+    <div class="section-title">Current Focus</div>
+
+    <p>
+      Building a clean digital home that can hold projects, writing, and systems without turning into noise.
+      The goal is not to pretend everything is finished. The goal is to make something real and keep improving it.
+    </p>
+
+    <div class="note">
+      Built steadily. Still taking shape.
     </div>
   </div>
 </body>
