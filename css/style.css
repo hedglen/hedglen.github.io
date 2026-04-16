@@ -20,6 +20,10 @@
   --muted:    #7a6e66;
   --accent:   #b84c00;
   --border:   #ddd6c8;
+  --toggle-track: #ede8de;
+  --toggle-track-hover: #e4dcca;
+  --toggle-thumb: #f8f4ee;
+  --toggle-thumb-border: #9b8f82;
   --serif:    'Lora', Georgia, 'Times New Roman', serif;
   --sans:     'Inter', system-ui, -apple-system, sans-serif;
   --max:      700px;
@@ -33,6 +37,10 @@
   --muted:    #b8aea6;
   --accent:   #ff7733;
   --border:   #3a3632;
+  --toggle-track: #252220;
+  --toggle-track-hover: #2f2b27;
+  --toggle-thumb: #1a1714;
+  --toggle-thumb-border: #b8aea6;
 }
 
 html {
@@ -146,26 +154,28 @@ strong { font-weight: 600; }
   display: block;
   width: 40px;
   height: 22px;
-  background: var(--border);
+  background: var(--toggle-track);
+  border: 1px solid var(--toggle-thumb-border);
   border-radius: 11px;
   position: relative;
-  transition: background 0.2s;
+  transition: background 0.2s, border-color 0.2s;
 }
 
 .theme-toggle:hover .toggle-track {
-  background: var(--muted);
+  background: var(--toggle-track-hover);
 }
 
 .toggle-thumb {
   display: block;
   width: 18px;
   height: 18px;
-  background: var(--text);
+  background: var(--toggle-thumb);
+  border: 1px solid var(--toggle-thumb-border);
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: transform 0.2s;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.2s, background 0.2s, border-color 0.2s;
 }
 
 [data-theme="dark"] .toggle-thumb {
