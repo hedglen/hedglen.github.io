@@ -637,3 +637,136 @@ code {
 
   .site-footer-inner { flex-direction: column; gap: 8px; }
 }
+
+/* ── Print ────────────────────────────────────────────────── */
+
+@media print {
+  @page {
+    margin: 0.75in;
+  }
+
+  :root,
+  [data-theme="dark"] {
+    --bg: #ffffff;
+    --bg-alt: #ffffff;
+    --text: #000000;
+    --muted: #444444;
+    --accent: #000000;
+    --border: #cccccc;
+    color-scheme: light;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    font-size: 12pt;
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    line-height: 1.5;
+    transition: none;
+  }
+
+  .site-header,
+  .site-footer,
+  .theme-toggle,
+  .content-note,
+  .essay-footer,
+  .about-portrait {
+    display: none !important;
+  }
+
+  .page,
+  .page-narrow {
+    margin: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .essay-header {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 0.35in;
+    padding: 0 0 0.22in;
+  }
+
+  .essay-header .page-kicker {
+    display: none;
+  }
+
+  .essay-header h1 {
+    font-size: 28pt;
+    letter-spacing: 0;
+    margin-bottom: 0.12in;
+  }
+
+  .essay-header .essay-meta,
+  .page-kicker,
+  .page-tagline,
+  .section-label,
+  .essay-section-title,
+  .note {
+    color: #444444 !important;
+  }
+
+  .essay-body {
+    font-size: 12pt;
+    line-height: 1.55;
+  }
+
+  .essay-body p {
+    margin-bottom: 0.12in;
+    max-width: none;
+    orphans: 3;
+    text-indent: 0.22in;
+    widows: 3;
+  }
+
+  .essay-body p:first-of-type,
+  .essay-body p.no-indent {
+    text-indent: 0;
+  }
+
+  .essay-section {
+    break-inside: auto;
+    margin: 0.45in 0 0;
+  }
+
+  .essay-section:first-child {
+    margin-top: 0;
+  }
+
+  .essay-section-title {
+    break-after: avoid;
+    font-size: 9pt;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.22in;
+    page-break-after: avoid;
+  }
+
+  .essay-section-title::before,
+  .essay-section-title::after {
+    content: '';
+    margin: 0;
+  }
+
+  a {
+    color: #000000 !important;
+    text-decoration: none;
+  }
+
+  .card-grid,
+  .card,
+  .featured,
+  .writing-card {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
