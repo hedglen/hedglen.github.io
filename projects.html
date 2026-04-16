@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projects by Rob Hedglen — systems, tools, experiments, and works in progress.">
+  <meta name="description" content="Projects by Rob Hedglen — systems, tools, and practical builds.">
   <title>Projects — Rob Hedglen</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -27,63 +27,92 @@
 
     <span class="page-kicker">Projects</span>
     <h1>Systems and Builds</h1>
-    <span class="page-tagline">Tools, experiments, and ongoing work.</span>
+    <span class="page-tagline">Tools, automation, and practical builds that grew out of real use.</span>
 
     <p class="page-intro">
-      Most of what I build starts as a practical problem. Something that doesn't work the way
-      it should, or doesn't exist yet, or only half-exists and someone decided that was good enough.
+      Most of what I build starts as a practical problem — something that doesn't work the way it
+      should, or doesn't exist yet, or only half-exists and someone decided that was good enough.
       I tend to disagree with that last part.
     </p>
 
-    <span class="section-label" style="margin-top: 0; border-top: none; padding-top: 0;">Active Projects</span>
+    <span class="section-label" style="margin-top: 0; border-top: none; padding-top: 0;">Workstation</span>
 
     <div class="card-grid">
       <div class="card">
-        <h2>Personal Website</h2>
+        <h2>dotfiles</h2>
         <p>
-          Building hedglen.org as a clean home for projects, writing, and ideas.
-          The goal is simple: make it useful, honest, and easy to keep alive.
-          No frameworks, no build tools — just HTML, CSS, and a clear head.
+          One-command Windows bootstrap. Drop a single PowerShell line on a fresh machine and it
+          handles app installation, terminal config, fonts, shell profile, editor settings, and
+          all automation. The goal is a fully productive machine in under an hour, no manual steps.
         </p>
-        <a class="card-link" href="https://hedglen.org">View site &rarr;</a>
+        <a class="card-link" href="https://github.com/hedglen/dotfiles" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       </div>
       <div class="card">
-        <h2>dotfiles and Workstation Setup</h2>
+        <h2>windows-dev-workstation</h2>
         <p>
-          A Windows-native configuration system built around PowerShell, junction points,
-          and a portable tools directory. The goal is a machine that can be rebuilt
-          and fully productive in under an hour.
+          A structured setup guide and script collection for building a clean Windows development
+          environment. Covers WSL, PowerShell, terminal configuration, and the toolchain decisions
+          that make daily work faster and less fragile.
         </p>
-        <a class="card-link" href="https://github.com/hedglen" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        <a class="card-link" href="https://github.com/hedglen/windows-dev-workstation" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+    </div>
+
+    <span class="section-label">Media</span>
+
+    <div class="card-grid">
+      <div class="card">
+        <h2>mpv-config</h2>
+        <p>
+          A heavily tuned media player configuration built for a 3440&times;1440 ultrawide with an
+          RTX 3070 Ti. Includes automatic HDR switching, AI-based upscaling via FSRCNNX and Anime4K
+          shaders, hardware decoding, and a complete keyboard and mouse control scheme. The kind of
+          project that was supposed to take an afternoon.
+        </p>
+        <a class="card-link" href="https://github.com/hedglen/mpv-config" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       </div>
       <div class="card">
-        <h2>Writing and Creative Practice</h2>
+        <h2>ytdl</h2>
         <p>
-          A growing body of work tied to long-form creative nonfiction, MFA coursework,
-          and a sustained interest in what it means to write honestly about hard things.
-          The writing feeds the system and the system feeds the writing.
+          A yt-dlp wrapper with quality presets, audio-only mode, and browser cookie handling that
+          actually works. Downloads video and audio from YouTube, Twitch, Bandcamp, SoundCloud, and
+          dozens of other platforms directly into a structured media library. Aliases are wired into
+          the shell so it's always one command away.
         </p>
-        <a class="card-link" href="writing.html">Go to Writing &rarr;</a>
       </div>
       <div class="card">
-        <h2>mpv Configuration</h2>
+        <h2>media-organizer</h2>
         <p>
-          A fine-tuned media player setup with HDR passthrough, shader stacks, and Lua
-          scripts for a clean, high-quality playback environment. The kind of project
-          that was supposed to take an afternoon and became something else entirely.
+          A command-line tool that watches a download inbox and moves files into a structured library —
+          auto-classifying content as Movies, TV Shows, or other categories based on filename parsing.
+          Run <code style="font-family: monospace; font-size: 0.9em;">orgmed</code> to preview,
+          <code style="font-family: monospace; font-size: 0.9em;">orgmed --apply</code> to commit.
+          No more manually sorting downloads.
+        </p>
+      </div>
+      <div class="card">
+        <h2>foobar2000 Theme</h2>
+        <p>
+          A portable foobar2000 setup with a custom Astra-inspired theme. Real-time spectrum analyzer,
+          waveform seekbar, large album art with ambient effects, parametric EQ, and a dark color
+          scheme that makes a music player feel like it was actually designed by someone who cares.
         </p>
       </div>
     </div>
 
-    <span class="section-label">What This Will Become</span>
+    <span class="section-label">This Site</span>
 
-    <p>
-      Over time, this page will include selected GitHub repos, project writeups,
-      and notes on what's being built, tested, and learned along the way. The point is
-      to build it out steadily — not to pretend it arrived finished.
-    </p>
-
-    <p class="note">More to come. Check back.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h2>hedglen.org</h2>
+        <p>
+          Hand-coded HTML and CSS — no frameworks, no build tools, no dependencies that will break
+          in six months. A clean home for writing, projects, and ideas. The goal is something honest,
+          fast, and easy to keep alive indefinitely.
+        </p>
+        <a class="card-link" href="https://github.com/hedglen/hedglen.github.io" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+    </div>
 
   </main>
 
