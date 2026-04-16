@@ -26,6 +26,15 @@
   --max-wide: 900px;
 }
 
+[data-theme="dark"] {
+  --bg:       #1a1714;
+  --bg-alt:   #252220;
+  --text:     #f8f4ee;
+  --muted:    #b8aea6;
+  --accent:   #ff7733;
+  --border:   #3a3632;
+}
+
 html {
   font-size: 18px;
   scroll-behavior: smooth;
@@ -37,6 +46,7 @@ body {
   font-family: var(--serif);
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ── Typography ───────────────────────────────────────────── */
@@ -122,7 +132,47 @@ strong { font-weight: 600; }
   opacity: 1;
 }
 
-/* ── Page Layout ──────────────────────────────────────────── */
+/* ── Theme Toggle ─────────────────────────────────────── */
+
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 24px;
+}
+
+.toggle-track {
+  display: block;
+  width: 40px;
+  height: 22px;
+  background: var(--border);
+  border-radius: 11px;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.theme-toggle:hover .toggle-track {
+  background: var(--muted);
+}
+
+.toggle-thumb {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: var(--text);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+[data-theme="dark"] .toggle-thumb {
+  transform: translateX(18px);
+}
+
+/* ── Page Layout ──────────────────────────────────────── */
 
 .page {
   max-width: var(--max-wide);
@@ -483,8 +533,22 @@ strong { font-weight: 600; }
   .hero h1 { font-size: 2.4rem; }
   .essay-header h1 { font-size: 2.2rem; }
 
-  .site-header-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
-  .site-nav { gap: 20px; flex-wrap: wrap; }
+  .site-header-inner { 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 16px; 
+  }
+  
+  .site-nav { 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    order: 3;
+    width: 100%;
+  }
+  
+  .theme-toggle {
+    margin-left: auto;
+  }
 
   .page, .page-narrow { padding: 48px 20px 80px; }
   .featured { padding: 28px 24px; }
