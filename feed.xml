@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rob Hedglen — Writing</title>
+    <link>https://hedglen.org/writing.html</link>
+    <atom:link href="https://hedglen.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Creative nonfiction, essays, craft notes, and long-form work by Rob Hedglen.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>https://hedglen.org/favicon-96x96.png</url>
+      <title>Rob Hedglen — Writing</title>
+      <link>https://hedglen.org/writing.html</link>
+      <width>96</width>
+      <height>96</height>
+    </image>
+    <item>
+      <title>Echo Hours</title>
+      <link>https://hedglen.org/echo-hours.html</link>
+      <guid isPermaLink="true">https://hedglen.org/echo-hours.html</guid>
+      <pubDate>Sun, 31 Aug 2025 00:00:00 -0400</pubDate>
+      <category>Creative Nonfiction</category>
+      <description>A creative nonfiction piece told in four movements: Morning, Afternoon, Evening, Dreams.</description>
+    </item>
+  </channel>
+</rss>
