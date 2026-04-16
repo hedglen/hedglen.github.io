@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Projects by Rob Hedglen — systems, tools, and practical builds.">
   <title>Projects — Rob Hedglen</title>
+  <link rel="canonical" href="https://hedglen.org/projects.html">
+  <meta name="theme-color" content="#b84c00">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:site_name" content="hedglen.org">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects — Rob Hedglen">
+  <meta property="og:description" content="Systems, tools, automation, and practical builds by Rob Hedglen.">
+  <meta property="og:url" content="https://hedglen.org/projects.html">
+  <meta property="og:image" content="https://hedglen.org/images/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects — Rob Hedglen">
+  <meta name="twitter:description" content="Systems, tools, automation, and practical builds by Rob Hedglen.">
+  <meta name="twitter:image" content="https://hedglen.org/images/social-card.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -14,7 +32,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#b84c00">
 </head>
 <body>
 
@@ -25,12 +42,12 @@
         <ul class="site-nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="writing.html">Writing</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-        <span class="toggle-track">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="toggle-track" aria-hidden="true">
           <span class="toggle-thumb"></span>
         </span>
       </button>
@@ -49,7 +66,7 @@
       I tend to disagree with that last part.
     </p>
 
-    <span class="section-label" style="margin-top: 0; border-top: none; padding-top: 0;">Workstation</span>
+    <span class="section-label first-section">Workstation</span>
 
     <div class="card-grid">
       <div class="card">
@@ -100,8 +117,8 @@
         <p>
           A command-line tool that watches a download inbox and moves files into a structured library —
           auto-classifying content as Movies, TV Shows, or other categories based on filename parsing.
-          Run <code style="font-family: monospace; font-size: 0.9em;">orgmed</code> to preview,
-          <code style="font-family: monospace; font-size: 0.9em;">orgmed --apply</code> to commit.
+          Run <code>orgmed</code> to preview,
+          <code>orgmed --apply</code> to commit.
           No more manually sorting downloads.
         </p>
       </div>
@@ -132,7 +149,7 @@
 
   <footer class="site-footer">
     <div class="site-footer-inner">
-      <p>&copy; 2025 Rob Hedglen</p>
+      <p>&copy; 2025-2026 Rob Hedglen</p>
       <p><a href="https://github.com/hedglen" target="_blank" rel="noopener">GitHub</a></p>
     </div>
   </footer>

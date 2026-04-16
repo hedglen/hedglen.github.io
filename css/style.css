@@ -3,8 +3,6 @@
    Warm Literary Design
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap');
-
 /* ── Reset & Base ─────────────────────────────────────────── */
 
 *, *::before, *::after {
@@ -28,6 +26,7 @@
   --sans:     'Inter', system-ui, -apple-system, sans-serif;
   --max:      700px;
   --max-wide: 900px;
+  color-scheme: light;
 }
 
 [data-theme="dark"] {
@@ -41,6 +40,7 @@
   --toggle-track-hover: #2f2b27;
   --toggle-thumb: #1a1714;
   --toggle-thumb-border: #b8aea6;
+  color-scheme: dark;
 }
 
 html {
@@ -83,8 +83,19 @@ a {
 
 a:hover { opacity: 0.7; }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 em { font-style: italic; }
 strong { font-weight: 600; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  font-size: 0.9em;
+}
 
 /* ── Navigation ───────────────────────────────────────────── */
 
@@ -148,6 +159,7 @@ strong { font-weight: 600; }
   padding: 0;
   cursor: pointer;
   margin-left: 24px;
+  border-radius: 12px;
 }
 
 .toggle-track {
@@ -239,6 +251,12 @@ strong { font-weight: 600; }
   border-top: 1px solid var(--border);
   padding-top: 32px;
   margin-top: 56px;
+}
+
+.section-label.first-section {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* ── Cards ────────────────────────────────────────────────── */
@@ -424,6 +442,22 @@ strong { font-weight: 600; }
   letter-spacing: 0.04em;
 }
 
+.content-note {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin-bottom: 56px;
+  padding: 18px 22px;
+}
+
+.content-note p {
+  margin: 0;
+  max-width: 100%;
+}
+
 .essay-body {
   font-size: 1.08rem;
   line-height: 1.85;
@@ -477,6 +511,10 @@ strong { font-weight: 600; }
   text-indent: 0;
   max-width: 100%;
   margin-bottom: 4px;
+}
+
+.essay-back-link {
+  margin-top: 16px;
 }
 
 /* ── About page ───────────────────────────────────────────── */
