@@ -1,0 +1,495 @@
+/* ============================================================
+   hedglen.org — Shared Stylesheet
+   Warm Literary Design
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap');
+
+/* ── Reset & Base ─────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:       #f8f4ee;
+  --bg-alt:   #ede8de;
+  --text:     #1a1714;
+  --muted:    #7a6e66;
+  --accent:   #b84c00;
+  --border:   #ddd6c8;
+  --serif:    'Lora', Georgia, 'Times New Roman', serif;
+  --sans:     'Inter', system-ui, -apple-system, sans-serif;
+  --max:      700px;
+  --max-wide: 900px;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.75rem; margin-bottom: 0.4em; }
+h2 { font-size: 1.35rem; margin-bottom: 0.35em; }
+h3 { font-size: 1.05rem; margin-bottom: 0.25em; }
+
+p {
+  margin-bottom: 1.2em;
+  max-width: var(--max);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+a:hover { opacity: 0.7; }
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+/* ── Navigation ───────────────────────────────────────────── */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-header-inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.wordmark {
+  font-family: var(--serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.wordmark:hover { opacity: 0.6; color: var(--text); }
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.site-nav a {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* ── Page Layout ──────────────────────────────────────────── */
+
+.page {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 72px 24px 120px;
+}
+
+.page-narrow {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 72px 24px 120px;
+}
+
+/* ── Page Header ──────────────────────────────────────────── */
+
+.page-kicker {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.page-tagline {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--muted);
+  margin-bottom: 48px;
+  display: block;
+}
+
+.page-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 56px;
+  max-width: var(--max);
+}
+
+/* ── Section Headings ─────────────────────────────────────── */
+
+.section-label {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+  display: block;
+  border-top: 1px solid var(--border);
+  padding-top: 32px;
+  margin-top: 56px;
+}
+
+/* ── Cards ────────────────────────────────────────────────── */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.card {
+  background: var(--bg);
+  padding: 28px 32px;
+  transition: background 0.15s;
+}
+
+.card:hover {
+  background: var(--bg-alt);
+}
+
+.card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0;
+  max-width: 100%;
+  line-height: 1.65;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+/* Writing card variant — more editorial */
+.writing-card {
+  background: var(--bg);
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: background 0.15s;
+}
+
+.writing-card:hover { background: var(--bg-alt); }
+
+.writing-card .meta {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.writing-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.writing-card h2 a {
+  color: var(--text);
+}
+
+.writing-card h2 a:hover { opacity: 0.6; color: var(--text); }
+
+.writing-card p {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+/* ── Hero (Home page) ─────────────────────────────────────── */
+
+.hero {
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 64px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.hero .hero-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  max-width: 620px;
+}
+
+/* ── Featured Piece ───────────────────────────────────────── */
+
+.featured {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 36px 40px;
+  margin-bottom: 48px;
+}
+
+.featured .featured-label {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+  display: block;
+}
+
+.featured h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.featured h2 a { color: var(--text); }
+.featured h2 a:hover { opacity: 0.65; color: var(--text); }
+
+.featured p {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 20px;
+}
+
+.featured .read-link {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+/* ── Reading Page (Essay/Piece) ───────────────────────────── */
+
+.essay-header {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 64px;
+}
+
+.essay-header h1 {
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.essay-header .essay-meta {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.essay-body {
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+.essay-body p {
+  margin-bottom: 1.4em;
+  max-width: 100%;
+  text-indent: 2em;
+}
+
+.essay-body p:first-of-type,
+.essay-body p.no-indent {
+  text-indent: 0;
+}
+
+.essay-section {
+  margin-top: 72px;
+  margin-bottom: 40px;
+}
+
+.essay-section-title {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.essay-section-title::before,
+.essay-section-title::after {
+  content: '—';
+  margin: 0 16px;
+  color: var(--border);
+}
+
+.essay-footer {
+  margin-top: 72px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.essay-footer p {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-indent: 0;
+  max-width: 100%;
+  margin-bottom: 4px;
+}
+
+/* ── About page ───────────────────────────────────────────── */
+
+.about-body p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.4em;
+  max-width: 640px;
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 24px;
+  margin-top: auto;
+}
+
+.site-footer-inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer p {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0;
+  max-width: none;
+}
+
+.site-footer a {
+  color: var(--muted);
+}
+
+.site-footer a:hover { color: var(--accent); opacity: 1; }
+
+/* ── Utility ──────────────────────────────────────────────── */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 48px 0;
+}
+
+.note {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 48px;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+
+  h1 { font-size: 2.1rem; }
+  .hero h1 { font-size: 2.4rem; }
+  .essay-header h1 { font-size: 2.2rem; }
+
+  .site-header-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .site-nav { gap: 20px; flex-wrap: wrap; }
+
+  .page, .page-narrow { padding: 48px 20px 80px; }
+  .featured { padding: 28px 24px; }
+  .card { padding: 24px 20px; }
+  .essay-header { padding: 48px 0 36px; }
+
+  .site-footer-inner { flex-direction: column; gap: 8px; }
+}

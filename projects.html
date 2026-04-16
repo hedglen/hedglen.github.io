@@ -3,152 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Hedglen</title>
-  <style>
-    body {
-      background: #0b0b0b;
-      color: #eaeaea;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 120px auto;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      opacity: 0.6;
-      margin-bottom: 30px;
-      font-size: 1rem;
-    }
-
-    p {
-      line-height: 1.7;
-      opacity: 0.85;
-      max-width: 700px;
-    }
-
-    .nav {
-      margin-top: 30px;
-      margin-bottom: 60px;
-    }
-
-    .nav a {
-      color: #00ff9c;
-      text-decoration: none;
-      margin-right: 24px;
-      font-weight: 500;
-    }
-
-    .nav a:hover {
-      opacity: 0.7;
-    }
-
-    .section-title {
-      font-size: 1.25rem;
-      margin-top: 50px;
-      margin-bottom: 20px;
-    }
-
-    .project-card {
-      background: #121212;
-      border: 1px solid #1f1f1f;
-      border-radius: 10px;
-      padding: 22px;
-      margin-bottom: 18px;
-    }
-
-    .project-card h2 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 1.2rem;
-    }
-
-    .project-card p {
-      margin-top: 0;
-      margin-bottom: 14px;
-    }
-
-    .project-link {
-      color: #00ff9c;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .project-link:hover {
-      opacity: 0.7;
-    }
-
-    .note {
-      margin-top: 50px;
-      opacity: 0.55;
-      font-size: 0.95rem;
-    }
-  </style>
+  <meta name="description" content="Projects by Rob Hedglen — systems, tools, experiments, and works in progress.">
+  <title>Projects — Rob Hedglen</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Projects</h1>
-    <div class="tagline">Systems, tools, experiments, and works in progress.</div>
 
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="writing.html">Writing</a>
-      <a href="about.html">About</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="wordmark">Rob Hedglen</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <p>
-      This page is where I’m collecting projects that sit at the intersection of systems,
-      writing, workflow, and practical problem-solving. Some are active builds. Some are
-      experiments. Some are just ideas that got serious enough to deserve their own space.
+  <main class="page">
+
+    <span class="page-kicker">Projects</span>
+    <h1>Systems and Builds</h1>
+    <span class="page-tagline">Tools, experiments, and ongoing work.</span>
+
+    <p class="page-intro">
+      Most of what I build starts as a practical problem. Something that doesn't work the way
+      it should, or doesn't exist yet, or only half-exists and someone decided that was good enough.
+      I tend to disagree with that last part.
     </p>
 
-    <div class="section-title">Current Projects</div>
+    <span class="section-label" style="margin-top: 0; border-top: none; padding-top: 0;">Active Projects</span>
 
-    <div class="project-card">
-      <h2>Personal Website</h2>
-      <p>
-        Building out hedglen.org as a clean home for projects, writing, and ideas.
-        The goal is simple: make it useful, honest, and easy to keep alive.
-      </p>
-      <a class="project-link" href="https://hedglen.org">View site</a>
+    <div class="card-grid">
+      <div class="card">
+        <h2>Personal Website</h2>
+        <p>
+          Building hedglen.org as a clean home for projects, writing, and ideas.
+          The goal is simple: make it useful, honest, and easy to keep alive.
+          No frameworks, no build tools — just HTML, CSS, and a clear head.
+        </p>
+        <a class="card-link" href="https://hedglen.org">View site &rarr;</a>
+      </div>
+      <div class="card">
+        <h2>dotfiles and Workstation Setup</h2>
+        <p>
+          A Windows-native configuration system built around PowerShell, junction points,
+          and a portable tools directory. The goal is a machine that can be rebuilt
+          and fully productive in under an hour.
+        </p>
+        <a class="card-link" href="https://github.com/hedglen" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+      </div>
+      <div class="card">
+        <h2>Writing and Creative Practice</h2>
+        <p>
+          A growing body of work tied to long-form creative nonfiction, MFA coursework,
+          and a sustained interest in what it means to write honestly about hard things.
+          The writing feeds the system and the system feeds the writing.
+        </p>
+        <a class="card-link" href="writing.html">Go to Writing &rarr;</a>
+      </div>
+      <div class="card">
+        <h2>mpv Configuration</h2>
+        <p>
+          A fine-tuned media player setup with HDR passthrough, shader stacks, and Lua
+          scripts for a clean, high-quality playback environment. The kind of project
+          that was supposed to take an afternoon and became something else entirely.
+        </p>
+      </div>
     </div>
 
-    <div class="project-card">
-      <h2>Systems and Workflow Hub</h2>
-      <p>
-        Ongoing work around personal systems, digital organization, workflow design,
-        and making tools actually serve real daily life instead of becoming their own hobby.
-      </p>
-    </div>
-
-    <div class="project-card">
-      <h2>Writing and Creative Practice</h2>
-      <p>
-        A growing body of work tied to long-form writing, MFA work, revision practice,
-        and thinking through structure, tension, and meaning on the page.
-      </p>
-      <a class="project-link" href="writing.html">Go to writing</a>
-    </div>
-
-    <div class="section-title">What This Will Become</div>
+    <span class="section-label">What This Will Become</span>
 
     <p>
-      Over time, this page will include selected GitHub repos, project notes, and
-      writeups on what I’m building, testing, and learning.
+      Over time, this page will include selected GitHub repos, project writeups,
+      and notes on what's being built, tested, and learned along the way. The point is
+      to build it out steadily — not to pretend it arrived finished.
     </p>
 
-    <div class="note">
-      More coming soon. The point is to build this out steadily, not pretend it arrived finished.
+    <p class="note">More to come. Check back.</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>&copy; 2025 Rob Hedglen</p>
+      <p><a href="https://github.com/hedglen" target="_blank" rel="noopener">GitHub</a></p>
     </div>
-  </div>
+  </footer>
+
 </body>
 </html>
