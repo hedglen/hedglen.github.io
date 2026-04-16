@@ -549,6 +549,10 @@ code {
   max-width: 640px;
 }
 
+.contact-section {
+  scroll-margin-top: 120px;
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 
 .site-footer {
