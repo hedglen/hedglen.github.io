@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="iconTitle">
+  <title id="iconTitle">hedglen.org icon</title>
+  <defs>
+    <clipPath id="roundedSquareClip">
+      <rect x="32" y="32" width="448" height="448" rx="104" ry="104" />
+    </clipPath>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="104" ry="104" fill="#f8f4ee" />
+  <g clip-path="url(#roundedSquareClip)" fill="#b84c00">
+    <rect x="152" y="104" width="84" height="304" rx="42" ry="42" />
+    <rect x="214" y="188" width="172" height="84" rx="42" ry="42" />
+    <rect x="302" y="188" width="84" height="220" rx="42" ry="42" />
+  </g>
+</svg>
