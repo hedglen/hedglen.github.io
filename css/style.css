@@ -12,15 +12,15 @@
 }
 
 :root {
-  --bg:       #f8f4ee;
-  --bg-alt:   #ede8de;
+  --bg:       #f2ead6;
+  --bg-alt:   #e7decb;
   --text:     #1a1714;
   --muted:    #7a6e66;
   --accent:   #b84c00;
-  --border:   #ddd6c8;
-  --toggle-track: #ede8de;
-  --toggle-track-hover: #e4dcca;
-  --toggle-thumb: #f8f4ee;
+  --border:   #d4caae;
+  --toggle-track: #e7decb;
+  --toggle-track-hover: #ddd2bb;
+  --toggle-thumb: #f2ead6;
   --toggle-thumb-border: #9b8f82;
   --serif:    'Lora', Georgia, 'Times New Roman', serif;
   --sans:     'Inter', system-ui, -apple-system, sans-serif;
