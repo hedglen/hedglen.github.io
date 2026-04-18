@@ -64,9 +64,8 @@
           "position": 2,
           "item": {
             "@type": "SoftwareSourceCode",
-            "name": "windows-dev-workstation",
-            "codeRepository": "https://github.com/hedglen/windows-dev-workstation",
-            "programmingLanguage": "PowerShell"
+            "name": "mpv-config",
+            "codeRepository": "https://github.com/hedglen/mpv-config"
           }
         },
         {
@@ -74,8 +73,9 @@
           "position": 3,
           "item": {
             "@type": "SoftwareSourceCode",
-            "name": "mpv-config",
-            "codeRepository": "https://github.com/hedglen/mpv-config"
+            "name": "windows-dev-workstation",
+            "codeRepository": "https://github.com/hedglen/windows-dev-workstation",
+            "programmingLanguage": "PowerShell"
           }
         },
         {
@@ -85,6 +85,16 @@
             "@type": "SoftwareSourceCode",
             "name": "ytdl",
             "codeRepository": "https://github.com/hedglen/ytdl"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": "hedglen.org",
+            "codeRepository": "https://github.com/hedglen/hedglen.github.io",
+            "programmingLanguage": "HTML"
           }
         }
       ]
@@ -127,96 +137,263 @@
     </div>
   </header>
 
-  <main class="page">
+  <main class="page portfolio-page">
 
-    <span class="page-kicker">Projects</span>
-    <h1>Systems and Builds</h1>
-    <span class="page-tagline">Tools, automation, and practical builds that grew out of real use.</span>
-
-    <p class="page-intro">
-      Most of what I build starts as a practical problem — something that doesn't work the way it
-      should, or doesn't exist yet, or only half-exists and someone decided that was good enough.
-      I tend to disagree with that last part.
-    </p>
-
-    <span class="section-label first-section">Workstation</span>
-
-    <div class="card-grid">
-      <div class="card">
-        <h2>dotfiles</h2>
-        <p>
-          One-command Windows bootstrap. Drop a single PowerShell line on a fresh machine and it
-          handles app installation, terminal config, fonts, shell profile, editor settings, and
-          all automation. The goal is a fully productive machine in under an hour, no manual steps.
-        </p>
-        <a class="card-link" href="https://github.com/hedglen/dotfiles" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-      <div class="card">
-        <h2>windows-dev-workstation</h2>
-        <p>
-          A structured setup guide and script collection for building a clean Windows development
-          environment. Covers WSL, PowerShell, terminal configuration, and the toolchain decisions
-          that make daily work faster and less fragile.
-        </p>
-        <a class="card-link" href="https://github.com/hedglen/windows-dev-workstation" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-    </div>
-
-    <span class="section-label">Media</span>
-
-    <div class="card-grid">
-      <div class="card">
-        <h2>mpv-config</h2>
-        <p>
-          A heavily tuned media player configuration built for a 3440&times;1440 ultrawide with an
-          RTX 3070 Ti. Includes automatic HDR switching, AI-based upscaling via FSRCNNX and Anime4K
-          shaders, hardware decoding, and a complete keyboard and mouse control scheme. The kind of
-          project that was supposed to take an afternoon.
-        </p>
-        <a class="card-link" href="https://github.com/hedglen/mpv-config" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-      <div class="card">
-        <h2>ytdl</h2>
-        <p>
-          A yt-dlp wrapper with quality presets, audio-only mode, and browser cookie handling that
-          actually works. Downloads video and audio from YouTube, Twitch, Bandcamp, SoundCloud, and
-          dozens of other platforms directly into a structured media library. Aliases are wired into
-          the shell so it's always one command away.
-        </p>
-        <a class="card-link" href="https://github.com/hedglen/ytdl" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-      </div>
-      <div class="card">
-        <h2>media-organizer</h2>
-        <p>
-          A command-line tool that watches a download inbox and moves files into a structured library —
-          auto-classifying content as Movies, TV Shows, or other categories based on filename parsing.
-          Run <code>orgmed</code> to preview,
-          <code>orgmed --apply</code> to commit.
-          No more manually sorting downloads.
+    <section class="portfolio-hero" aria-labelledby="projects-title">
+      <div>
+        <span class="page-kicker">Projects</span>
+        <h1 id="projects-title">Systems and Builds</h1>
+        <span class="page-tagline">Practical tools, workstation automation, and media workflows built out of real use.</span>
+        <p class="page-intro">
+          Most of this starts as friction: a fresh machine that takes too long to rebuild, files that
+          refuse to stay organized, settings that should be repeatable instead of remembered. The work
+          here is practical, documented, and close enough to daily use that it has to stay honest.
         </p>
       </div>
-      <div class="card">
-        <h2>foobar2000 Theme</h2>
+
+      <aside class="portfolio-summary" aria-label="Project summary">
+        <div class="summary-item">
+          <span class="summary-value">7</span>
+          <span class="summary-label">Active builds</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-value">5</span>
+          <span class="summary-label">Public repos</span>
+        </div>
+        <div class="summary-item">
+          <span class="summary-value">2</span>
+          <span class="summary-label">Signature builds</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="best-work" aria-labelledby="best-work-title">
+      <div class="best-work-heading">
+        <h2 id="best-work-title">Best Work</h2>
         <p>
-          A portable foobar2000 setup with a custom Astra-inspired theme. Real-time spectrum analyzer,
-          waveform seekbar, large album art with ambient effects, parametric EQ, and a dark color
-          scheme that makes a music player feel like it was actually designed by someone who cares.
+          These are the two builds I would point to first: one for rebuilding a machine,
+          one for making daily media use feel shaped instead of accidental.
         </p>
       </div>
-    </div>
 
-    <span class="section-label">This Site</span>
+      <div class="best-work-grid">
+        <article class="best-work-card">
+          <div>
+            <span class="best-work-label">Workstation System</span>
+            <h3>dotfiles</h3>
+            <p>
+              A one-command Windows bootstrap that turns a fresh machine into a working environment:
+              apps, fonts, shell profile, terminal config, editor defaults, Git setup, and the small
+              preferences that usually vanish between rebuilds.
+            </p>
+          </div>
+          <dl class="best-work-facts">
+            <div>
+              <dt>Stack</dt>
+              <dd>PowerShell, Windows Terminal, Git, app installers</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>A productive Windows machine in under an hour, without rebuilding from memory.</dd>
+            </div>
+          </dl>
+          <div class="best-work-actions">
+            <a class="portfolio-link" href="https://github.com/hedglen/dotfiles" target="_blank" rel="noopener">View repository &rarr;</a>
+          </div>
+        </article>
 
-    <div class="card-grid">
-      <div class="card">
-        <h2>hedglen.org</h2>
-        <p>
-          Hand-coded HTML and CSS — no frameworks, no build tools, no dependencies that will break
-          in six months. A clean home for writing, projects, and ideas worth building in public.
-        </p>
-        <a class="card-link" href="https://github.com/hedglen/hedglen.github.io" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        <article class="best-work-card">
+          <div>
+            <span class="best-work-label">Media System</span>
+            <h3>mpv-config</h3>
+            <p>
+              A deeply tuned media player configuration built around an ultrawide display, automatic
+              HDR switching, hardware decoding, AI upscaling shaders, and a keyboard and mouse control
+              scheme that makes playback feel deliberate.
+            </p>
+          </div>
+          <dl class="best-work-facts">
+            <div>
+              <dt>Stack</dt>
+              <dd>mpv, FSRCNNX, Anime4K, HDR switching, hardware decode</dd>
+            </div>
+            <div>
+              <dt>Outcome</dt>
+              <dd>Local playback that feels fast, intentional, and tuned to the screen it runs on.</dd>
+            </div>
+          </dl>
+          <div class="best-work-actions">
+            <a class="portfolio-link" href="https://github.com/hedglen/mpv-config" target="_blank" rel="noopener">View repository &rarr;</a>
+          </div>
+        </article>
       </div>
-    </div>
+    </section>
+
+    <section class="portfolio-section" aria-labelledby="workstation-title">
+      <div class="portfolio-section-heading">
+        <h2 id="workstation-title">Workstation</h2>
+        <p>Setup, repeatability, and the boring things that make daily work calmer.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row">
+          <div>
+            <span class="project-eyebrow">Reference System</span>
+            <h3>windows-dev-workstation</h3>
+            <p>
+              A setup guide and script collection for WSL, PowerShell, terminal configuration,
+              and the toolchain decisions behind a stable Windows development environment.
+            </p>
+            <ul class="project-meta">
+              <li>PowerShell</li>
+              <li>Guide</li>
+              <li>Public repo</li>
+            </ul>
+            <div class="project-action-row">
+              <a class="portfolio-link" href="https://github.com/hedglen/windows-dev-workstation" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt>Status</dt>
+              <dd class="project-status">Maintained</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Document the choices behind the workstation.</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio-section" aria-labelledby="media-title">
+      <div class="portfolio-section-heading">
+        <h2 id="media-title">Media</h2>
+        <p>Playback, downloads, and organization tuned for the way the library is actually used.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row">
+          <div>
+            <span class="project-eyebrow">Download Workflow</span>
+            <h3>ytdl</h3>
+            <p>
+              A yt-dlp wrapper with quality presets, audio-only mode, browser cookie handling,
+              and shell aliases that keep media downloads one command away.
+            </p>
+            <ul class="project-meta">
+              <li>yt-dlp</li>
+              <li>CLI</li>
+              <li>Public repo</li>
+            </ul>
+            <div class="project-action-row">
+              <a class="portfolio-link" href="https://github.com/hedglen/ytdl" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt>Status</dt>
+              <dd class="project-status">Active</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Download video and audio into a predictable library.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="project-row">
+          <div>
+            <span class="project-eyebrow">Library Cleanup</span>
+            <h3>media-organizer</h3>
+            <p>
+              A command-line organizer that watches a download inbox, previews file moves,
+              and sorts media into a structured library based on filename parsing.
+            </p>
+            <ul class="project-meta">
+              <li>CLI</li>
+              <li>Automation</li>
+              <li>Local tool</li>
+            </ul>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt>Status</dt>
+              <dd class="project-status">In use</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Stop manually sorting downloads after the fact.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="project-row">
+          <div>
+            <span class="project-eyebrow">Music Interface</span>
+            <h3>foobar2000 Theme</h3>
+            <p>
+              A portable foobar2000 setup with a custom dark theme, waveform seekbar,
+              spectrum analyzer, album art, ambient effects, and a tuned EQ workflow.
+            </p>
+            <ul class="project-meta">
+              <li>foobar2000</li>
+              <li>Theme</li>
+              <li>Portable setup</li>
+            </ul>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt>Status</dt>
+              <dd class="project-status">Personal setup</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Make the daily music player feel complete.</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio-section" aria-labelledby="site-title">
+      <div class="portfolio-section-heading">
+        <h2 id="site-title">This Site</h2>
+        <p>A small, hand-coded home for writing and public work.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row">
+          <div>
+            <span class="project-eyebrow">Publishing</span>
+            <h3>hedglen.org</h3>
+            <p>
+              Hand-coded HTML and CSS with RSS, metadata, structured data, dark mode,
+              and a deliberately simple surface for essays, projects, and work in public.
+            </p>
+            <ul class="project-meta">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="project-action-row">
+              <a class="portfolio-link" href="https://github.com/hedglen/hedglen.github.io" target="_blank" rel="noopener">GitHub &rarr;</a>
+            </div>
+          </div>
+          <dl class="project-facts">
+            <div>
+              <dt>Status</dt>
+              <dd class="project-status">Live</dd>
+            </div>
+            <div>
+              <dt>Use</dt>
+              <dd>Own the writing surface without adding fragile machinery.</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
 
   </main>
 

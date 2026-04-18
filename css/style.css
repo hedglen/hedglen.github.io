@@ -553,6 +553,300 @@ code {
   scroll-margin-top: 120px;
 }
 
+/* ── Projects portfolio page ─────────────────────────────── */
+
+.portfolio-page {
+  max-width: 980px;
+}
+
+.portfolio-hero {
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  gap: 40px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.7fr);
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+}
+
+.portfolio-hero h1 {
+  font-size: 3.05rem;
+  margin-bottom: 16px;
+}
+
+.portfolio-hero .page-tagline {
+  margin-bottom: 28px;
+  max-width: 620px;
+}
+
+.portfolio-hero .page-intro {
+  margin-bottom: 0;
+  max-width: 650px;
+}
+
+.portfolio-summary {
+  align-self: end;
+  border-left: 1px solid var(--border);
+  display: grid;
+  gap: 18px;
+  padding-left: 28px;
+}
+
+.summary-item {
+  display: grid;
+  gap: 2px;
+}
+
+.summary-value {
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.summary-label {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.best-work {
+  margin-bottom: 64px;
+}
+
+.best-work-heading {
+  margin-bottom: 24px;
+}
+
+.best-work-heading h2 {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.best-work-heading p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  max-width: 620px;
+}
+
+.best-work-grid {
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.best-work-card {
+  background: var(--bg-alt);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 420px;
+  padding: 34px 38px;
+  transition: background 0.15s;
+}
+
+.best-work-card:hover {
+  background: var(--bg);
+}
+
+.best-work-label,
+.project-eyebrow,
+.project-facts dt {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.best-work-card h3 {
+  font-size: 1.85rem;
+  margin: 10px 0 14px;
+}
+
+.best-work-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.best-work-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.portfolio-link {
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.best-work-facts {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 14px;
+  margin: 28px 0 0;
+  padding-top: 18px;
+}
+
+.best-work-facts div {
+  display: grid;
+  gap: 3px;
+}
+
+.best-work-facts dt {
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.best-work-facts dd {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.portfolio-section {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  padding: 44px 0;
+}
+
+.portfolio-section-heading {
+  align-self: start;
+  position: sticky;
+  top: 96px;
+}
+
+.portfolio-section-heading h2 {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.portfolio-section-heading p {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+.project-list {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-row {
+  background: var(--bg);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 0.45fr);
+  padding: 28px 30px;
+  transition: background 0.15s;
+}
+
+.project-row + .project-row {
+  border-top: 1px solid var(--border);
+}
+
+.project-row:hover {
+  background: var(--bg-alt);
+}
+
+.project-row h3 {
+  font-size: 1.24rem;
+  margin: 6px 0 10px;
+}
+
+.project-row p {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin-bottom: 0;
+  max-width: 610px;
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  list-style: none;
+  margin-top: 16px;
+}
+
+.project-meta li {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.project-meta li::before {
+  color: var(--border);
+  content: "/";
+  margin-right: 12px;
+}
+
+.project-meta li:first-child::before {
+  content: "";
+  margin-right: 0;
+}
+
+.project-facts {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.project-facts div {
+  display: grid;
+  gap: 3px;
+}
+
+.project-facts dd {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.project-status {
+  color: var(--text);
+}
+
+.project-action-row {
+  margin-top: 18px;
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 
 .site-footer {
@@ -601,12 +895,33 @@ code {
 
 /* ── Responsive ───────────────────────────────────────────── */
 
+@media (max-width: 820px) {
+  .portfolio-hero,
+  .best-work-grid,
+  .portfolio-section,
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-summary {
+    border-left: 0;
+    border-top: 1px solid var(--border);
+    padding-left: 0;
+    padding-top: 24px;
+  }
+
+  .portfolio-section-heading {
+    position: static;
+  }
+}
+
 @media (max-width: 640px) {
   html { font-size: 17px; }
 
   h1 { font-size: 2.1rem; }
   .hero h1 { font-size: 2.4rem; }
   .essay-header h1 { font-size: 2.2rem; }
+  .portfolio-hero h1 { font-size: 2.25rem; }
 
   .site-header-inner { 
     flex-direction: row; 
@@ -628,6 +943,10 @@ code {
   .page, .page-narrow { padding: 48px 20px 80px; }
   .featured { padding: 28px 24px; }
   .card { padding: 24px 20px; }
+  .best-work-card,
+  .project-row { padding: 26px 22px; }
+  .best-work-card { min-height: auto; }
+  .portfolio-section { padding: 36px 0; }
   .essay-header { padding: 48px 0 36px; }
   .about-portrait {
     float: none;
