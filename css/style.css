@@ -648,7 +648,7 @@ code {
 }
 
 .best-work-card {
-  background: var(--bg-alt);
+  background: var(--bg);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 420px;
@@ -657,7 +657,7 @@ code {
 }
 
 .best-work-card:hover {
-  background: var(--bg);
+  background: var(--bg-alt);
 }
 
 .best-work-label,
