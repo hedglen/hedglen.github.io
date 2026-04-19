@@ -549,6 +549,55 @@ code {
   max-width: 640px;
 }
 
+.military-credentials {
+  margin-bottom: 48px;
+}
+
+.military-credentials .section-label {
+  margin-top: 52px;
+}
+
+.credentials-intro {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.credential-grid {
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: grid;
+  gap: 1px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.credential-card {
+  background: var(--bg);
+  padding: 26px 30px;
+}
+
+.credential-card h2 {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+}
+
+.credential-card ul {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+}
+
+.credential-card li {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.credential-card strong {
+  color: var(--text);
+}
+
 .contact-section {
   scroll-margin-top: 120px;
 }
@@ -943,6 +992,7 @@ code {
   .page, .page-narrow { padding: 48px 20px 80px; }
   .featured { padding: 28px 24px; }
   .card { padding: 24px 20px; }
+  .credential-card { padding: 24px 20px; }
   .best-work-card,
   .project-row { padding: 26px 22px; }
   .best-work-card { min-height: auto; }
