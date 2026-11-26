@@ -6,7 +6,7 @@
     <atom:link href="https://hedglen.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>Creative nonfiction, essays, craft notes, and long-form work by Rob Hedglen.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2026 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 -0500</lastBuildDate>
     <image>
       <url>https://hedglen.org/favicon-96x96.png</url>
       <title>Rob Hedglen — Writing</title>
@@ -14,6 +14,14 @@
       <width>96</width>
       <height>96</height>
     </image>
+    <item>
+      <title>Adrift</title>
+      <link>https://hedglen.org/adrift.html</link>
+      <guid isPermaLink="true">https://hedglen.org/adrift.html</guid>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 -0500</pubDate>
+      <category>Poetry</category>
+      <description>A poem by Rob Hedglen, with companion writer's notes.</description>
+    </item>
     <item>
       <title>Soul Doubt</title>
       <link>https://hedglen.org/soul-doubt.html</link>
